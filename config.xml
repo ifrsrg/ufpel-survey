@@ -1,12 +1,24 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.gtapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>gtappv1.1</name>
+    <name>Ufpel APP</name>
     <description>
-        A blank PhoneGap app.
+        Aplicativo em desenvolvimento, parceria ifrs e ufpel.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="gideonveloz@gmail.com" href="https://www.facebook.com/leogideao">
+        Leonardo Rocha
     </author>
     <content src="index.html" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <allow-navigation href="http://*/*" />
+    <allow-intent href="https://*/*" />
     <access origin="*" />
+    <engine name="browser" spec="~4.1.0" />
+    <platform name="android">
+        <icon src="www/res/icon/36x36.png" platform="android" qualifier="ldpi" />
+        <icon src="www/res/icon/48x48.png" platform="android" qualifier="mdpi" />
+        <icon src="www/res/icon/72x72.png" platform="android" qualifier="hdpi" />
+        <icon src="www/res/icon/96x96.png" platform="android" qualifier="xhdpi" />
+        <icon src="www/res/icon/144x144.png" platform="android" qualifier="xxhdpi" />
+        <icon src="www/res/icon/192x192.png" platform="android" qualifier="fr-xxhdpi" />
+    </platform>
 </widget>
