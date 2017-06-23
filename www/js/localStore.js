@@ -26,6 +26,14 @@ var Store = function(nomeReferente,controls){
         break;
       }
     }
+    var meuIndice = 0;
+    for ( var i = 0; i < trator.opcoesT.length; i++ ){
+      if ( trator.opcoesT[i].possui ){
+        meuIndice += trator.opcoesT[i].grauImportancia;
+      }
+    }
+    var indicePorcentagem = ((meuIndice*10)/99.86).toFixed(2);
+    trator.indice = indicePorcentagem;
     if ( !tratorRepetido ){
       this.listaTratores.push(trator);
       console.log(trator.opcoesT);
