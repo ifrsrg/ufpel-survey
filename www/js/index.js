@@ -23,7 +23,6 @@ var app = {
       document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
     onDeviceReady: function() {
-      window.alert(window.location);
       this.controls.botaoConfirmar.addEventListener("touchend",this.confirmar.bind(this));
       this.controls.botaoLimparDados.addEventListener("touchend",this.limparDadosForm.bind(this));
       this.controls.botaoLogarGoogle.addEventListener("touchend",this.loginGoogle.bind(this));
