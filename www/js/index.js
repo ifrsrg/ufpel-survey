@@ -45,6 +45,11 @@ var app = {
         }
       });
       for ( var i = 0; i < listaTratores.length; i++ ){
+        var tratorId = listaTratores[i].id;
+        var meuElemento = document.getElementById("deletar-trator-"+tratorId);
+        meuElemento.addEventListener("touchend",this.deletarTrator);
+      }
+      for ( var i = 0; i < listaTratores.length; i++ ){
         var variante = i + 1;
         var divBoxMaisEspec = document.getElementById('mais-espec-'+variante);
         var divMoreInfo = document.getElementById('more-info-'+variante);
@@ -87,7 +92,7 @@ var app = {
         }
         window.location.reload();
       }
-	  },
+    },
     limparDadosForm : function(){
       this.controls.formPageRefference.reset();
       document.querySelector('#demo-toast-example').MaterialSnackbar.showSnackbar({message: 'Formulário limpo com sucesso!'});
@@ -96,7 +101,7 @@ var app = {
       myStore.atualizarLista();
     },
     deletarTrator : function(){
-      myStore.deletarTrator;
+      myStore.deletarTrator(this.id);
     },
     limparTudo : function(){
       myStore.limparLista();
