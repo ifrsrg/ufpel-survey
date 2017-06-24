@@ -36,7 +36,6 @@ var Store = function(nomeReferente,controls){
     trator.indice = indicePorcentagem;
     if ( !tratorRepetido ){
       this.listaTratores.push(trator);
-      console.log(trator.opcoesT);
       localStorage['listaDeTratores'] = JSON.stringify(this.listaTratores);
       return true;
     }
@@ -52,8 +51,8 @@ var Store = function(nomeReferente,controls){
       handleBarsMostrarTratores(this.listaTratores);
     }
   };
-  this.deletarTrator = function(){
-
+  this.deletarTrator = function(idTrator){   
+    
   };
   this.limparLista = function(){
     localStorage['listaDeTratores'] = JSON.stringify([]);
