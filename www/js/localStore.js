@@ -51,8 +51,15 @@ var Store = function(nomeReferente,controls){
       handleBarsMostrarTratores(this.listaTratores);
     }
   };
-  this.deletarTrator = function(idTrator){   
-    
+  this.deletarTrator = function(idTrator){
+    var indexOf = idTrator.lastIndexOf("-");
+    var newIdTrator = parseInt(idTrator.substring(indexOf+1));
+    this.listaTratores.splice(newIdTrator-1,1);
+    for ( var i = 0; i < this.listaTratores.length; i++ ){
+      this.listaTratores[i].id = i+1;
+    }
+    this.atualizarLista();
+    window.location.reload();
   };
   this.limparLista = function(){
     localStorage['listaDeTratores'] = JSON.stringify([]);
