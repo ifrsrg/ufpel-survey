@@ -13,7 +13,7 @@
     <allow-navigation href="http://*/*" />
     <allow-navigation href="https://*/*" />
     <allow-navigation href="data:*" />
-    <plugin name="cordova-plugin-splashscreen" spec="plugins/cordova-plugin-splashscreen" />
+    <plugin name="cordova-plugin-splashscreen" spec="plugins/splashplugin" />
     <platform name="android">
         <icon src="www/res/icon/36x36.png" platform="android" qualifier="ldpi" />
         <icon src="www/res/icon/48x48.png" platform="android" qualifier="mdpi" />
