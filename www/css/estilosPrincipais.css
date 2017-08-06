@@ -1,0 +1,97 @@
+.page-card{  margin: 20px auto; }
+.demo-card-square.mdl-card { width: 320px; height: 200px; }
+.demo-card-square > .mdl-card__title {
+  color: #fff;
+  background: url('../imgs/trator-icon-white.png') center right 15% no-repeat #4682B4;
+}
+.page-content form{
+  margin: 20px auto;
+  width: 300px;
+  padding: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2);
+}
+.input-default{
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.form-title{ margin-bottom: -5px; }
+.demo-list-action { width: 300px; border-bottom: 2px solid black; border-top: 2px solid black; margin: 5px auto;
+  position: relative;}
+.marca-span{ position: absolute; top: 50px; left: 72px;}
+.modelo-span{ position: absolute; top: 68px; left: 72px; }
+.icon-avatar{
+  background: url('../imgs/min-icon-trator.png') center right 20% no-repeat;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+  border: 2px solid #4682B4;
+}
+.trator-title{
+  position: absolute;
+  top: 10px;
+  left: 72px;
+  border-bottom: 2px solid #4682B4;
+  font-weight: bold;
+}
+.indice-text {
+  color: #4682B4;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+#box-tratores{
+  width: 300px;
+  margin: 10px auto;
+  font-size: 13px;
+}
+#loginGoogleBox{
+  width: 85%;
+  border: 3px solid #4682B4;
+  margin: 0 auto 20px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+}
+#loginGoogleBox img{
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: 3px solid #4682B4;
+}
+#loginGoogleBox span{
+  font-weight: bold;
+}
+.userInfos{
+  color: #4682B4;
+  font-weight: bolder;
+}
+#userName{
+  text-transform: capitalize;
+}
+#more-information{
+  padding: 5px;
+  border: 1px solid black;
+  margin: 15px 0px 10px 0px;
+}
+.compDiv{
+ margin-bottom: -20px;
+}
+#preloader {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    background: #ccc;
+}
+#semConexao{
+  background-color: red;
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  display: none;
+}#semConexao img{
+  margin-left: calc(50% - 151px);
+  margin-top: 50%;
+}
